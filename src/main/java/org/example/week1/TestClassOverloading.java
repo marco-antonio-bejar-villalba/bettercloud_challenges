@@ -1,4 +1,4 @@
-package org.example;
+package org.example.week1;
 
 
 class OverloadingTest {
@@ -6,7 +6,7 @@ class OverloadingTest {
         System.out.println("m1 int");
     }
 
-    void m1(float x) {
+    void m1(double x) {
         System.out.println("m1 float");
     }
 
@@ -18,7 +18,7 @@ class OverloadingTest {
 public class TestClassOverloading {
     public static void main(String[] args) {
         OverloadingTest overloadingTest=new OverloadingTest();
-        //overloadingTest.m1(0.1);
-        overloadingTest.m1(0.1f);
+        overloadingTest.m1(1.0);
+        overloadingTest.m1(1.0f);
     }
 }
